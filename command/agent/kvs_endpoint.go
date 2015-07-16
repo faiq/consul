@@ -4,7 +4,9 @@ import (
 	"bytes"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 
@@ -57,6 +59,9 @@ func (s *HTTPServer) KVSEndpoint(resp http.ResponseWriter, req *http.Request) (i
 func (s *HTTPServer) KVSGet(resp http.ResponseWriter, req *http.Request, args *structs.KeyRequest) (interface{}, error) {
 	// Check for recurse
 	method := "KVS.Get"
+	logger := log.New(os.Stderr, "", log.LstdFlags)
+	logger.SetFlags(log.LstdFlags | log.Lshortfile)
+	logger.Printf("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Consul Agent: Inside the get method")
 	params := req.URL.Query()
 	if _, ok := params["recurse"]; ok {
 		method = "KVS.List"

@@ -184,7 +184,7 @@ func (c *CheckMonitor) check() {
 		if status, ok := exitErr.Sys().(syscall.WaitStatus); ok {
 			code := status.ExitStatus()
 			if code == 1 {
-				c.Logger.Printf("[WARN] agent: Check '%v' is now warning", c.CheckID)
+				c.Logger.Printf("AYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY LMAO [WARN] agent: Check '%v' is now warning", c.CheckID)
 				c.Notify.UpdateCheck(c.CheckID, structs.HealthWarning, outputStr)
 				return
 			}
@@ -361,7 +361,7 @@ func (c *CheckHTTP) run() {
 func (c *CheckHTTP) check() {
 	req, err := http.NewRequest("GET", c.HTTP, nil)
 	if err != nil {
-		c.Logger.Printf("[WARN] agent: http request failed '%s': %s", c.HTTP, err)
+		c.Logger.Printf("AYYYY LMAO  ~~~~~~[WARN] agent: http request failed '%s': %s", c.HTTP, err)
 		c.Notify.UpdateCheck(c.CheckID, structs.HealthCritical, err.Error())
 		return
 	}
@@ -379,26 +379,26 @@ func (c *CheckHTTP) check() {
 	// Format the response body
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		c.Logger.Printf("[WARN] agent: check '%v': Get error while reading body: %s", c.CheckID, err)
+		c.Logger.Printf("AYYYY LMAO  ~~~~~~[WARN] agent: check '%v': Get error while reading body: %s", c.CheckID, err)
 		body = []byte{}
 	}
 	result := fmt.Sprintf("HTTP GET %s: %s Output: %s", c.HTTP, resp.Status, body)
 
 	if resp.StatusCode >= 200 && resp.StatusCode <= 299 {
 		// PASSING (2xx)
-		c.Logger.Printf("[DEBUG] agent: check '%v' is passing", c.CheckID)
+		c.Logger.Printf("AYYYY LMAO  ~~~~~~[DEBUG] agent: check '%v' is passing", c.CheckID)
 		c.Notify.UpdateCheck(c.CheckID, structs.HealthPassing, result)
 
 	} else if resp.StatusCode == 429 {
 		// WARNING
 		// 429 Too Many Requests (RFC 6585)
 		// The user has sent too many requests in a given amount of time.
-		c.Logger.Printf("[WARN] agent: check '%v' is now warning", c.CheckID)
+		c.Logger.Printf("AYYYY LMAO  ~~~~~~ [WARN] agent: check '%v' is now warning", c.CheckID)
 		c.Notify.UpdateCheck(c.CheckID, structs.HealthWarning, result)
 
 	} else {
 		// CRITICAL
-		c.Logger.Printf("[WARN] agent: check '%v' is now critical", c.CheckID)
+		c.Logger.Printf("AYYYY LMAO  ~~~~~~[WARN] agent: check '%v' is now critical", c.CheckID)
 		c.Notify.UpdateCheck(c.CheckID, structs.HealthCritical, result)
 	}
 }
