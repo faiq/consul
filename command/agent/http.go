@@ -15,8 +15,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hashicorp/consul/consul/structs"
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/faiq/consul/consul/structs"
+	"github.com/faiq/consul/tlsutil"
 	"github.com/mitchellh/mapstructure"
 )
 

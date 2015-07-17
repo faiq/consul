@@ -25,7 +25,7 @@ A Consul agent can join any other agent, not just agents in server mode.
 To simulate a more realistic cluster, we will start a two node cluster via
 [Vagrant](https://www.vagrantup.com/). The Vagrantfile we will be using can
 be found in the [demo section of the Consul repo]
-(https://github.com/hashicorp/consul/tree/master/demo/vagrant-cluster).
+(https://github.com/faiq/consul/tree/master/demo/vagrant-cluster).
 
 We first boot our two nodes:
 

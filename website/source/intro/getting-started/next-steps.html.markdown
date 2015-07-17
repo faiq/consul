@@ -24,7 +24,7 @@ As a next step, the following resources are available:
 * [Guides](/docs/guides/index.html) - This section provides various getting
   started guides with Consul, including how to bootstrap a new datacenter.
 
-* [Examples](https://github.com/hashicorp/consul/tree/master/demo) -
+* [Examples](https://github.com/faiq/consul/tree/master/demo) -
   The work-in-progress examples folder within the GitHub
   repository for Consul contains functional examples of various use cases
   of Consul to help you get started with exactly what you need.

@@ -5,8 +5,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/hashicorp/consul/command"
-	"github.com/hashicorp/consul/command/agent"
+	"github.com/faiq/consul/command"
+	"github.com/faiq/consul/command/agent"
 	"github.com/mitchellh/cli"
 )
 

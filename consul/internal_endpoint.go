@@ -1,7 +1,7 @@
 package consul
 
 import (
-	"github.com/hashicorp/consul/consul/structs"
+	"github.com/faiq/consul/consul/structs"
 	"github.com/hashicorp/serf/serf"
 )
 

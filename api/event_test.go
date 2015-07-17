@@ -3,7 +3,7 @@ package api
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/testutil"
+	"github.com/faiq/consul/testutil"
 )
 
 func TestEvent_FireList(t *testing.T) {

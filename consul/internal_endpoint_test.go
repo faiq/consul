@@ -3,8 +3,8 @@ package consul
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/hashicorp/consul/consul/structs"
-	"github.com/hashicorp/consul/testutil"
+	"github.com/faiq/consul/consul/structs"
+	"github.com/faiq/consul/testutil"
 	"os"
 	"testing"
 )

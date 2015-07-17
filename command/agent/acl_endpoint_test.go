@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/hashicorp/consul/consul/structs"
+	"github.com/faiq/consul/consul/structs"
 )
 
 func makeTestACL(t *testing.T, srv *HTTPServer) string {

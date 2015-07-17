@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	consulapi "github.com/hashicorp/consul/api"
+	consulapi "github.com/faiq/consul/api"
 )
 
 var consulAddr string

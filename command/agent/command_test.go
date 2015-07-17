@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/consul/testutil"
+	"github.com/faiq/consul/testutil"
 	"github.com/mitchellh/cli"
 )
 

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/armon/go-metrics"
-	"github.com/hashicorp/consul/consul/structs"
+	"github.com/faiq/consul/consul/structs"
 	"github.com/hashicorp/raft"
 	"github.com/hashicorp/serf/serf"
 )

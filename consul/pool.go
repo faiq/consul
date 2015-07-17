@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/faiq/consul/tlsutil"
 	"github.com/hashicorp/go-msgpack/codec"
 	"github.com/hashicorp/yamux"
 	"github.com/inconshreveable/muxado"

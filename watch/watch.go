@@ -5,7 +5,7 @@ import (
 	"io"
 	"sync"
 
-	consulapi "github.com/hashicorp/consul/api"
+	consulapi "github.com/faiq/consul/api"
 )
 
 // WatchPlan is the parsed version of a watch specification. A watch provides

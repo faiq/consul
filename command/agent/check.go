@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/armon/circbuf"
-	"github.com/hashicorp/consul/consul/structs"
+	"github.com/faiq/consul/consul/structs"
 )
 
 const (

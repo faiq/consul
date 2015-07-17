@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/armon/go-metrics"
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/consul/structs"
+	"github.com/faiq/consul/acl"
+	"github.com/faiq/consul/consul/structs"
 )
 
 // ACL endpoint is used to manipulate ACLs

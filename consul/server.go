@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/faiq/consul/acl"
+	"github.com/faiq/consul/tlsutil"
 	"github.com/hashicorp/raft"
 	"github.com/hashicorp/raft-boltdb"
 	"github.com/hashicorp/serf/serf"

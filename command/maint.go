@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/faiq/consul/api"
 	"github.com/mitchellh/cli"
 )
 

@@ -19,7 +19,7 @@ Following is some example usage:
 package main
 
 import (
-	"github.com/hashicorp/consul/testutil"
+	"github.com/faiq/consul/testutil"
 	"testing"
 )
 

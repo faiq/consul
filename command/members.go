@@ -3,7 +3,7 @@ package command
 import (
 	"flag"
 	"fmt"
-	"github.com/hashicorp/consul/command/agent"
+	"github.com/faiq/consul/command/agent"
 	"github.com/mitchellh/cli"
 	"github.com/ryanuber/columnize"
 	"net"

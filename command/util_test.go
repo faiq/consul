@@ -2,8 +2,8 @@ package command
 
 import (
 	"fmt"
-	"github.com/hashicorp/consul/command/agent"
-	"github.com/hashicorp/consul/consul"
+	"github.com/faiq/consul/command/agent"
+	"github.com/faiq/consul/consul"
 	"io"
 	"io/ioutil"
 	"math/rand"

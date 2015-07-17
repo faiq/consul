@@ -9,7 +9,7 @@ Currently, all of the Consul APIs included in version 0.3 are supported.
 Documentation
 =============
 
-The full documentation is available on [Godoc](http://godoc.org/github.com/hashicorp/consul/api)
+The full documentation is available on [Godoc](http://godoc.org/github.com/faiq/consul/api)
 
 Usage
 =====

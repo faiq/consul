@@ -4,8 +4,8 @@ import (
 	"flag"
 	"os"
 
-	consulapi "github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/agent"
+	consulapi "github.com/faiq/consul/api"
+	"github.com/faiq/consul/command/agent"
 )
 
 const (
